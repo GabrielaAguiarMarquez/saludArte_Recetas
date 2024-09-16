@@ -12,31 +12,31 @@
     <nav class="header__nav">
         <ul class="header__nav-list">
             <li class="header__nav-item">
-                <a href="">
+                <a href="pages/colaboradores.html">
                     <img src="assets/logo.svg" class="header__nav-logo" alt="Logo">
                 </a>
             </li>
             <li class="header__nav-item">
-                <a href="">inicio</a>
+                <a href="pages/inicio.html">inicio</a>
             </li>
             <li class="header__nav-item">
-                <a href="">colaboradores</a>
+                <a href="pages/colaboradores.html">colaboradores</a>
             </li>
             <li class="header__nav-item">
-                <a href="">recetas</a>
+                <a href="pages/recetas.html">recetas</a>
             </li>
             <li class="header__nav-item">
-                <a href="">blog</a>
+                <a href="pages/blog.html">blog</a>
             </li>
             <li class="header__nav-item">
-                <a href="">recomendaciones</a>
+                <a href="pages/recomendaciones.html">recomendaciones</a>
             </li>
         </ul>
         <div class="header__nav-botones">
-            <a href="">
+            <a href="pages/formularios/ingresar.html">
                 <button class="header__nav-botones-oscuro">Ingresar</button>
             </a>
-            <a href="">
+            <a href="pages/formularios/registrarse.html">
                 <button class="header__nav-botones-claro">Registrarse</button>
             </a>
         </div>
@@ -60,7 +60,7 @@
     </section>
     <!-- Section: Recetas del Mes -->
     <section class="containerRecipe">
-        <h2>Recetas del Mes</h2>
+        <h3>Recetas del Mes</h2>
         <div class="containerRecipe__container">
             <article class="containerRecipe__card">
                 <figure class="containerRecipe__card-img">
@@ -121,16 +121,16 @@
     <section class="body__sectionPublicaciones">
         <h2>Publicaciones Destacadas</h2>
         <div class="body__sectionPublicaciones-container">
-            <article>
+            <article class="body__sectionPublicaciones-card">
                 <figure>
                     <img src="assets/articulo1_masa-madre.jpg" alt="Cosas que puedes hacer con masa madre">
                     <figcaption>
                         <a href="">
-                            <button>Leer Más</button>
+                            <button class="body__sectionPublicaciones-boton">Leer Más</button>
                         </a>
                     </figcaption>
                 </figure>
-                <div>
+                <div class="body__sectionPublicaciones-descripcion">
                     <h4>
                         Titulo mega hiper gigante del articulo de un lindo  ejemplo que quiero crear
                     </h4>
@@ -139,16 +139,16 @@
                     </p>
                 </div>
             </article>
-            <article>
+            <article class="body__sectionPublicaciones-card">
                 <figure>
-                    <img src="assets/articulo2-beneficio-yoga.jpg" alt="Beneficios de practicar yoga al despertar">
+                    <img src="assets/articulo2-beneficio-yoga.jpg" alt="Beneficios de hacer yoga">
                     <figcaption>
                         <a href="">
-                            <button>Leer Más</button>
+                            <button class="body__sectionPublicaciones-boton">Leer Más</button>
                         </a>
                     </figcaption>
                 </figure>
-                <div>
+                <div class="body__sectionPublicaciones-descripcion">
                     <h4>
                         Titulo mega hiper gigante del articulo de un lindo  ejemplo que quiero crear
                     </h4>
@@ -158,9 +158,13 @@
                 </div>
             </article>
         </div>
-        <button>
-            Más Articulos
-        </button>
+        <div class="body__sectionPublicaciones-container-boton">
+            <a href="pages/blog.html">
+                <button class="body__sectionPublicaciones-blog">
+                    Más Articulos
+                </button>
+            </a>
+        </div>
     </section>
 
     <main></main>
