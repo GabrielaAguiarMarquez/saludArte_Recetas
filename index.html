@@ -3,123 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="assets/logo.svg" type="image/x-icon">
+    <title>SaludArte Cocina</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header class="header">
-        <!-- NavBar -->
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item">
-                    <a href="">
-                        <img src="assets/logo.svg" class="header__nav-logo" alt="Logo">
-                    </a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="">inicio</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="">colaboradores</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="">recetas</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="">blog</a>
-                </li>
-                <li class="header__nav-item">
-                    <a href="">recomendaciones</a>
-                </li>
-            </ul>
-            <div class="header__nav-botones">
+<header class="header">
+    <!-- NavBar -->
+    <nav class="header__nav">
+        <ul class="header__nav-list">
+            <li class="header__nav-item">
                 <a href="">
-                    <button class="header__nav-botones-oscuro">Ingresar</button>
+                    <img src="assets/logo.svg" class="header__nav-logo" alt="Logo">
                 </a>
-                <a href="">
-                    <button class="header__nav-botones-claro">Registrarse</button>
-                </a>
+            </li>
+            <li class="header__nav-item">
+                <a href="">inicio</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="">colaboradores</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="">recetas</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="">blog</a>
+            </li>
+            <li class="header__nav-item">
+                <a href="">recomendaciones</a>
+            </li>
+        </ul>
+        <div class="header__nav-botones">
+            <a href="">
+                <button class="header__nav-botones-oscuro">Ingresar</button>
+            </a>
+            <a href="">
+                <button class="header__nav-botones-claro">Registrarse</button>
+            </a>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__container">
+            <div>
+                <h1>Presentación del Sitio WEB de recetas</h1>
+            <p>
+                Un parrafo supermega breve porque no  ultra llenar esto de aca, ya no se que escribir pero me daba flojera agregar un lorem.
+            </p>
+            <button class="hero__container-boton">
+                Participar
+            </button>
             </div>
-        </nav>
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero__container">
+        </div>
+        <figure class="hero__container-img">
+            <img src="assets/hero_cocina.jpg" alt="Mujer cocinando">
+        </figure>
+    </section>
+    <!-- Section: Recetas del Mes -->
+    <section class="containerRecipe">
+        <h2>Recetas del Mes</h2>
+        <div class="containerRecipe__container">
+            <article class="containerRecipe__card">
+                <figure class="containerRecipe__card-img">
+                    <img src="assets/receta1-panqueques-avena.jpg" alt="Platillo panqueques de avena">
+                </figure>
+                <ul class="containerRecipe__card-list">
+                    <li class="containerRecipe__card-item">
+                        <h4>Panqueques de Avena</h4>
+                    </li>
+                    <li class="containerRecipe__card-item">
+                        <p>30 min</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="containerRecipe__card">
+                <figure class="containerRecipe__card-img">
+                    <img src="assets/receta2-sandwich-sagu.jpg" alt="Platillo: Sandwich de Sagu">
+                </figure>
+                <ul class="containerRecipe__card-list">
+                    <li class="containerRecipe__card-item">
+                        <h4>Sandwich de Sagu</h4>
+                    </li>
+                    <li class="containerRecipe__card-item">
+                        <p>30 min</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="containerRecipe__card">
+                <figure class="containerRecipe__card-img">
+                    <img src="assets/receta3-salsa-napole.jpg" alt="Platillo: Salsa Napole">
+                </figure>
+                <ul class="containerRecipe__card-list">
+                    <li class="containerRecipe__card-item">
+                        <h4>Salsa Napole</h4>
+                    </li>
+                    <li class="containerRecipe__card-item">
+                        <p>30 min</p>
+                    </li>
+                </ul>
+            </article>
+            <article class="containerRecipe__card">
+                <figure class="containerRecipe__card-img">
+                    <img src="assets/receta4-pasticho-vegano.jpg" alt="Platillo: Pasticho Vegano">
+                </figure>
+                <ul class="containerRecipe__card-list">
+                    <li class="containerRecipe__card-item">
+                        <h4>Pasticho Vegano</h4>
+                    </li>
+                    <li class="containerRecipe__card-item">
+                        <p>30 min</p>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+</header>
+<body class="body">
+    <section class="body__sectionPublicaciones">
+        <h2>Publicaciones Destacadas</h2>
+        <div class="body__sectionPublicaciones-container">
+            <article>
+                <figure>
+                    <img src="assets/articulo1_masa-madre.jpg" alt="Cosas que puedes hacer con masa madre">
+                    <figcaption>
+                        <a href="">
+                            <button>Leer Más</button>
+                        </a>
+                    </figcaption>
+                </figure>
                 <div>
-                    <h1>Presentación del Sitio WEB de recetas</h1>
-                <p>
-                    Un parrafo supermega breve porque no  ultra llenar esto de aca, ya no se que escribir pero me daba flojera agregar un lorem.
-                </p>
-                <button class="hero__container-boton">
-                    Participar
-                </button>
+                    <h4>
+                        Titulo mega hiper gigante del articulo de un lindo  ejemplo que quiero crear
+                    </h4>
+                    <p>
+                        Esta de aca es una descripcion de ejemplo. Ademas ese debe debeeee deberia ser el lindo articulo.
+                    </p>
                 </div>
-            </div>
-            <figure class="hero__container-img">
-                <img src="assets/hero_cocina.jpg" alt="Mujer cocinando">
-            </figure>
-        </section>
-        <!-- Section: Recetas del Mes -->
-        <section class="containerRecipe">
-            <h1>Recetas del Mes</h1>
-            <div class="containerRecipe__container">
-                <article class="containerRecipe__card">
-                    <figure class="containerRecipe__card-img">
-                        <img src="assets/receta1-panqueques-avena.jpg" alt="Platillo panqueques de avena">
-                    </figure>
-                    <ul class="containerRecipe__card-list">
-                        <li class="containerRecipe__card-item">
-                            <h4>Panqueques de Avena</h4>
-                        </li>
-                        <li class="containerRecipe__card-item">
-                            <p>30 min</p>
-                        </li>
-                    </ul>
-                </article>
-                <article class="containerRecipe__card">
-                    <figure class="containerRecipe__card-img">
-                        <img src="assets/receta2-sandwich-sagu.jpg" alt="Platillo: Sandwich de Sagu">
-                    </figure>
-                    <ul class="containerRecipe__card-list">
-                        <li class="containerRecipe__card-item">
-                            <h4>Sandwich de Sagu</h4>
-                        </li>
-                        <li class="containerRecipe__card-item">
-                            <p>30 min</p>
-                        </li>
-                    </ul>
-                </article>
-                <article class="containerRecipe__card">
-                    <figure class="containerRecipe__card-img">
-                        <img src="assets/receta3-salsa-napole.jpg" alt="Platillo: Salsa Napole">
-                    </figure>
-                    <ul class="containerRecipe__card-list">
-                        <li class="containerRecipe__card-item">
-                            <h4>Salsa Napole</h4>
-                        </li>
-                        <li class="containerRecipe__card-item">
-                            <p>30 min</p>
-                        </li>
-                    </ul>
-                </article>
-                <article class="containerRecipe__card">
-                    <figure class="containerRecipe__card-img">
-                        <img src="assets/receta4-pasticho-vegano.jpg" alt="Platillo: Pasticho Vegano">
-                    </figure>
-                    <ul class="containerRecipe__card-list">
-                        <li class="containerRecipe__card-item">
-                            <h4>Pasticho Vegano</h4>
-                        </li>
-                        <li class="containerRecipe__card-item">
-                            <p>30 min</p>
-                        </li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-    </header>
+            </article>
+            <article>
+                <figure>
+                    <img src="assets/articulo2-beneficio-yoga.jpg" alt="Beneficios de practicar yoga al despertar">
+                    <figcaption>
+                        <a href="">
+                            <button>Leer Más</button>
+                        </a>
+                    </figcaption>
+                </figure>
+                <div>
+                    <h4>
+                        Titulo mega hiper gigante del articulo de un lindo  ejemplo que quiero crear
+                    </h4>
+                    <p>
+                        Esta de aca es una descripcion de ejemplo. Ademas ese debe debeeee deberia ser el lindo articulo.
+                    </p>
+                </div>
+            </article>
+        </div>
+        <button>
+            Más Articulos
+        </button>
+    </section>
 
-    <body></body>
-
-    <footer></footer>
+    <main></main>
+    <section></section>
+    <section></section>
 </body>
+<footer></footer>
 </html>
