@@ -6,7 +6,6 @@
     list-style: none;
     color: var(--color-texto);
 }
-
 /*
 #93c849 - Verde saludable (color base)
 #f2f27a - Amarillo fresco (color de acento)
@@ -15,7 +14,6 @@
 #6b8b23 - Verde oscuro natural (elementos importantes)
 #e6d953 - Amarillo dorado (detalles llamativos)
 */
-
 :root {
     --color-base: #93c849;
     --color-acento: #f2f27a;
@@ -26,19 +24,16 @@
   }
 
 /* HEADER */
-.header, .body {
-    background-color: rgba(57, 46, 46, 0.37);
+.header {
     height: 100vh;
     width: 100%;
 }
-
 .header__nav {
     display: flex;
     background-color: var(--color-detalles);
     width: 100%;
     height: 10%;
 }
-
 .header__nav-list {
     display: flex;
     justify-content: space-evenly;
@@ -49,7 +44,6 @@
     width: 80%;
     height: 10vh;
 }
-
 .header__nav-botones {
     width: 20%;
     display: flex;
@@ -58,6 +52,7 @@
     padding: 1rem;
 }
 
+/*BOTONES*/
 .header__nav-botones button, .hero__container-boton, .body__sectionPublicaciones-boton, .body__sectionPublicaciones-blog {
     font-size: 1.1875rem;
     width: 100%;
@@ -84,7 +79,7 @@
     height: 4rem;
 }
 
-
+/*HERO*/
 .hero {
     display: flex;
     justify-content: space-evenly;
@@ -92,7 +87,6 @@
     height: 70vh;
     background-color: var(--color-fondo);
 }
-
 .hero__container {
     width: 40%;
     display: flex;
@@ -102,7 +96,6 @@
     text-align: left;
     padding-left: 2rem;
 }
-
 .hero__container div {
     width: 70%;
     display: flex;
@@ -110,16 +103,12 @@
     flex-direction: column;
     gap: 1rem;
 }
-
 .hero__container p {
     font-size: 1.125rem;
 }
-
-
 .hero__container-boton {
     width: 40%;
 }
-
 .hero__container-img {
     width: 60%;
     height: 100%;
@@ -127,7 +116,6 @@
     justify-content: center;
     align-items: center;
 }
-
 .hero__container-img img {
     width: 70%;
     height: 70%;
@@ -135,6 +123,7 @@
     object-fit: cover;
 }
 
+/*RECETAS DEL MES*/
 .containerRecipe {
     background-color: var(--color-base);
     height: 20vh;
@@ -145,21 +134,18 @@
     padding-top: .6rem;
     gap: .4rem;
 }
-
 .containerRecipe__container {
     display: flex;
     justify-content: center;
     justify-content: space-around;
     text-align: left;
 }
-
 .containerRecipe__card {
     display: flex;
     align-items: center;
     gap: 1rem;
     cursor: pointer;
 }
-
 .containerRecipe__card img {
     border-radius: 100%;
     object-fit: cover;
@@ -168,6 +154,8 @@
 }
 
 /* BODY */
+
+/*PUBLICACIONES DESTACADAS*/
 .body__sectionPublicaciones {
     background-color: #f2f27a;
     height: 100vh;
@@ -176,14 +164,12 @@
     justify-content: center;
     align-items: center;
 }
-
 .body__sectionPublicaciones-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60%;
 }
-
 .body__sectionPublicaciones-container article {
     display: flex;
     flex-direction: column;
@@ -191,13 +177,11 @@
     justify-content: space-between;
     gap: .5rem;
 }
-
 .body__sectionPublicaciones-container figure {
     text-align: center;
     width: 94%;
     height: 14rem;
 }
-
 .body__sectionPublicaciones-container img {
     width: 100%;
     height: 100%;
@@ -206,11 +190,9 @@
     filter: grayscale(100%);
     transition: filter 1s;
 }
-
 .body__sectionPublicaciones-container img:hover {
     filter: grayscale(0%);
 }
-
 .body__sectionPublicaciones-container figcaption {
     position: relative;
     background-color: #e0e0b9;
@@ -229,15 +211,55 @@
     justify-content: center;
     gap: .3rem;
 }
-
 .body__sectionPublicaciones-descripcion h4 {
     font-size: 1.3rem;
 }
-
 .body__sectionPublicaciones-descripcion p {
     font-size: 1.2rem;
 }
 
-.body__sectionPublicaciones button {
-    
+/*SECTION RECETAS*/
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 25vh;
+    gap: 1rem;
+    background-color: var(--color-texto);
+}
+
+.footer__container-logo {
+    height: 34%;
+    filter: drop-shadow(2px 2px 5px gold);
+}
+
+.footer__container-logo img {
+    height: 100%;
+}
+
+.footer__nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer__nav a {
+    text-transform: uppercase;
+    color: var(--color-fondo);
+    font-weight: 700;
+}
+
+.footer__separador {
+    width: 25%;
+    height: .1rem;
+    background-color: var(--color-importantes);
+}
+
+.footer_copyright p {
+    color: var(--color-fondo);
+    font-weight: 600;
 }
