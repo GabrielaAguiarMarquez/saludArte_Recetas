@@ -157,7 +157,7 @@
 
 /*PUBLICACIONES DESTACADAS*/
 .body__sectionPublicaciones {
-    background-color: #f2f27a;
+    background-color: var(--color-acento);
     height: 100vh;
     display: flex;
     flex-direction: column;
