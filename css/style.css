@@ -6,6 +6,7 @@
     list-style: none;
     color: var(--color-texto);
 }
+
 /*
 #93c849 - Verde saludable (color base)
 #f2f27a - Amarillo fresco (color de acento)
@@ -53,7 +54,7 @@
 }
 
 /*BOTONES*/
-.header__nav-botones button, .hero__container-boton, .body__sectionPublicaciones-boton, .body__sectionPublicaciones-blog {
+.header__nav-botones button, .hero__container-boton, .body__sectionPublicaciones-boton, .body__sectionPublicaciones-blog, .main__boton {
     font-size: 1.1875rem;
     width: 100%;
     padding: .4rem .9rem;
@@ -62,7 +63,7 @@
     cursor: pointer;
 }
 
-.header__nav-botones-oscuro, .hero__container-boton, .body__sectionPublicaciones-boton {
+.header__nav-botones-oscuro, .hero__container-boton, .body__sectionPublicaciones-boton, .main__boton {
     background-color: var(--color-importantes);
     color: var(--color-fondo);
     border: none;
@@ -219,6 +220,37 @@
 }
 
 /*SECTION RECETAS*/
+.main {
+    background-color: var(--color-fondo);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.main__container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: 1fr 1fr;
+}
+.main__container img {
+    width: 11rem;
+    height: 11rem;
+    object-fit: cover;
+    filter: sepia(100%);
+    cursor: pointer;
+}
+.main__container img:hover {
+    filter: sepia(0);
+}
+.main h2 {
+    color: var(--color-importantes);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 /* FOOTER */
 
 .footer {
