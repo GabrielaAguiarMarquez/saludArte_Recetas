@@ -6,6 +6,7 @@
     <link rel="icon" href="assets/logo.svg" type="image/x-icon">
     <title>SaludArte Recetas</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/6cb58dcda6.js" crossorigin="anonymous"></script>
 </head>
 <header class="header">
     <!-- NavBar -->
@@ -180,7 +181,95 @@
             <button class="main__boton">Ver más</button>
         </a>
     </main>
-    <section></section>
+    <!-- Acordeon -->
+    <section class="body__acordeon">
+        <div class="body__acordeon-descripcion">
+            <h2>Preguntas Frecuentes</h2>
+            <p>
+                ¿Tienes dudas sobre como comenzar a tener una dieta saludable? No te preocupes, SaludArte COMIDA cuanta con una comunida extensa que te puede brindar una respuesta.
+            </p>
+            <a href="mailto:gabrielaaguiarmarquez@gmail.com">
+                <button class="body__acordeon-boton">Hacer Pregunta</button>
+            </a>
+        </div>
+        <div class="body__acordeon-preguntas">
+            <section class="body__acordeon-pregunta">
+                <h4>¿Todos los carboidratos se convierten en azúcar?</h4>
+                <div class="body__acordeon-cerrado" for="acordion-cerrado">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </section>
+            <section class="body__acordeon-respuesta">
+                <div class="body__acordeon-container">
+                    <h4>¿Todos los carboidratos se convierten en azúcar?</h4>
+                    <div class="body__acordeon-abierto" for="acordion-abierto">
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                </div>
+                <div class="body__acordeon-separador"></div>
+                <p>
+                    No, es al revés: todos los azúcares son un tipo de carbohidrato, pero no todos los carbohidratos son azúcares. Los carbohidratos incluyen azúcares, almidones y fibra, cada uno con funciones distintas en el cuerpo.
+                </p>
+            </section>
+
+            <section class="body__acordeon-pregunta">
+                <h4>¿Este es un ejemplo de una segunda pregunta?</h4>
+                <div class="body__acordeon-cerrado" for="acordion-cerrado">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </section>
+            <section class="body__acordeon-respuesta">
+                <div class="body__acordeon-container">
+                    <h4>¿Este es un ejemplo de una segunda pregunta?</h4>
+                    <div class="body__acordeon-abierto" for="acordion-abierto">
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                </div>
+                <div class="body__acordeon-separador"></div>
+                <p>
+                    No, es al revés: todos los azúcares son un tipo de carbohidrato, pero no todos los carbohidratos son azúcares. Los carbohidratos incluyen azúcares, almidones y fibra, cada uno con funciones distintas en el cuerpo.
+                </p>
+            </section>
+
+            <section class="body__acordeon-pregunta">
+                <h4>¿Este es un ejemplo de una tercera pregunta?</h4>
+                <div class="body__acordeon-cerrado" for="acordion-cerrado">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </section>
+            <section class="body__acordeon-respuesta">
+                <div class="body__acordeon-container">
+                    <h4>¿Este es un ejemplo de una tercera pregunta?</h4>
+                    <div class="body__acordeon-abierto" for="acordion-abierto">
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                </div>
+                <div class="body__acordeon-separador"></div>
+                <p>
+                    No, es al revés: todos los azúcares son un tipo de carbohidrato, pero no todos los carbohidratos son azúcares. Los carbohidratos incluyen azúcares, almidones y fibra, cada uno con funciones distintas en el cuerpo.
+                </p>
+            </section>
+
+            <section class="body__acordeon-pregunta">
+                <h4>¿Es real que los azucares son dañinos para mi?</h4>
+                <div class="body__acordeon-cerrado" for="acordion-cerrado">
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+            </section>
+            <section class="body__acordeon-respuesta">
+                <div class="body__acordeon-container">
+                    <h4>¿Es real que los azucares son dañinos para mi?</h4>
+                    <div class="body__acordeon-abierto" for="acordion-abierto">
+                        <i class="fa-solid fa-caret-up"></i>
+                    </div>
+                </div>
+                <div class="body__acordeon-separador"></div>
+                <p>
+                    No, es al revés: todos los azúcares son un tipo de carbohidrato, pero no todos los carbohidratos son azúcares. Los carbohidratos incluyen azúcares, almidones y fibra, cada uno con funciones distintas en el cuerpo.
+                </p>
+            </section>
+        </div>
+    </section>
     <section></section>
 </body>
 
@@ -220,4 +309,32 @@
         <p>Copyright © 2024</p>
     </div>
 </footer>
+
+<script>
+    const acordeonPreguntas = document.querySelectorAll('.body__acordeon-pregunta');
+    const acordeonRespuestas = document.querySelectorAll('.body__acordeon-respuesta');
+
+    const cerrarTodasLasRespuestas = () => {
+        acordeonPreguntas.forEach((pregunta) => pregunta.style.display = 'flex');
+        acordeonRespuestas.forEach((respuesta) => respuesta.style.display = 'none');
+    }
+
+    acordeonPreguntas.forEach((pregunta) => {
+        const abrirAcordeon = pregunta.querySelector('.fa-caret-down');
+        abrirAcordeon.addEventListener('click', () => {
+            cerrarTodasLasRespuestas();
+            pregunta.style.display = 'none';
+            pregunta.nextElementSibling.style.display = 'flex';
+        });
+    });
+
+    acordeonRespuestas.forEach((respuesta) => {
+        const cerrarAcordeon = respuesta.querySelector('.fa-caret-up');
+        cerrarAcordeon.addEventListener('click', () => {
+            respuesta.style.display = 'none';
+            respuesta.previousElementSibling.style.display = 'flex';
+        });
+    });
+</script>
+
 </html>
