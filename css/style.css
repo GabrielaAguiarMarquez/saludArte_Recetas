@@ -54,7 +54,7 @@
 }
 
 /*BOTONES*/
-.header__nav-botones button, .hero__container-boton, .body__sectionPublicaciones-boton, .body__sectionPublicaciones-blog, .main__boton, .body__acordeon-boton {
+.header__nav-botones button, .hero__container-boton, .body__sectionPublicaciones-boton, .body__sectionPublicaciones-blog, .main__boton, .body__acordeon-boton, .body__colaboradores-boton {
     font-size: 1.1875rem;
     width: 100%;
     padding: .4rem .9rem;
@@ -63,7 +63,7 @@
     cursor: pointer;
 }
 
-.header__nav-botones-oscuro, .hero__container-boton, .body__sectionPublicaciones-boton, .main__boton {
+.header__nav-botones-oscuro, .hero__container-boton, .body__sectionPublicaciones-boton, .main__boton, .body__colaboradores-boton {
     background-color: var(--color-importantes);
     color: var(--color-fondo);
     border: none;
@@ -349,10 +349,73 @@
     justify-content: space-around;
     padding: .8rem;
 }
-
 .body__acordeon-respuesta {
     display: none;
 }
+
+/* Colaboradores */
+.body__colaboradores {
+    background-color: var(--color-importantes);
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body__colaboradores-imagenes {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.body__colaboradores-div-uno, .body__colaboradores-div-dos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    gap: .5rem;
+}
+.CookMotive, .LadyAvenaa, .LuciaMartinez, .GabrielaAguiar {
+    object-fit: cover;
+    width: 30%;
+    height: 100%;
+    cursor: pointer;
+}
+.body__colaboradores-imagenes img {
+    filter: opacity(85%);
+    transition: filter 1s;
+}
+.body__colaboradores-imagenes img:hover {
+    filter: opacity(100%);
+}
+
+
+.body__colaboradores-descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+    width: 40%;
+    height: 100%;
+    padding: 0 4rem;
+}
+.body__colaboradores-descripcion h2, .body__colaboradores-descripcion p {
+    color: var(--color-fondo);
+}
+.body__colaboradores-descripcion h2 {
+    font-size: 1.8rem;
+}
+.body__colaboradores-descripcion p {
+    font-size: 1.2rem;
+}
+.body__colaboradores-boton {
+    background-color: var(--color-fondo);
+    color: var(--color-importantes);
+    width: 50%;
+}
+
 
 /* FOOTER */
 
