@@ -45,3 +45,51 @@ equis.addEventListener('click', () => {
   menuAbierto.style.display = 'none';
   headerNav.style.height = '10vh';
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const prevButton = document.querySelector('.containerRecipe__prev');
+  const nextButton = document.querySelector('.containerRecipe__next');
+  const containerRecipe = document.querySelector('.containerRecipe__container');
+
+  let currentCardIndex = 0;
+
+  function showCards() {
+      containerRecipe.style.display = 'flex';
+  }
+
+  function hideCards() {
+      containerRecipe.style.display = 'none';
+  }
+
+  function updateCurrentCard() {
+      const cards = containerRecipe.querySelectorAll('.containerRecipe__card');
+      cards[currentCardIndex].style.display = 'block';
+      cards.forEach((card, index) => {
+          if (index !== currentCardIndex) {
+              card.style.display = 'none';
+          }
+      });
+  }
+
+  function toggleVisibility() {
+      if (containerRecipe.style.display === 'none') {
+          showCards();
+          updateCurrentCard();
+      } else {
+          hideCards();
+      }
+  }
+
+  prevButton.addEventListener('click', () => {
+      currentCardIndex = (currentCardIndex - 1 + cards.length) % cards.length;
+      toggleVisibility();
+  });
+
+  nextButton.addEventListener('click', () => {
+      currentCardIndex = (currentCardIndex + 1) % cards.length;
+      toggleVisibility();
+  });
+});
+
